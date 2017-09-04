@@ -34,16 +34,16 @@ Partial Class Form1
         '
         Me.Button1.Location = New System.Drawing.Point(33, 46)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(142, 23)
+        Me.Button1.Size = New System.Drawing.Size(207, 23)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Find Mtext opject containing ""The"""
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(33, 86)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(142, 23)
+        Me.Button2.Size = New System.Drawing.Size(207, 23)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Save active drawing"
         Me.Button2.UseVisualStyleBackColor = True
@@ -52,7 +52,7 @@ Partial Class Form1
         '
         Me.Button3.Location = New System.Drawing.Point(33, 132)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(142, 23)
+        Me.Button3.Size = New System.Drawing.Size(207, 23)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Get drawing info"
         Me.Button3.UseVisualStyleBackColor = True
@@ -65,7 +65,7 @@ Partial Class Form1
         '
         Me.Button4.Location = New System.Drawing.Point(33, 170)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(142, 23)
+        Me.Button4.Size = New System.Drawing.Size(207, 23)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Open existing drwg"
         Me.Button4.UseVisualStyleBackColor = True
@@ -74,7 +74,7 @@ Partial Class Form1
         '
         Me.Button5.Location = New System.Drawing.Point(33, 208)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(142, 23)
+        Me.Button5.Size = New System.Drawing.Size(207, 23)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "Save active drwg"
         Me.Button5.UseVisualStyleBackColor = True
