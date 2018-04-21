@@ -7,8 +7,11 @@ Imports Autodesk.AutoCAD.Interop
 Imports Inventor
 
 Public Class Form1
-    Dim filepath1 As String = "C:\Repos\Acad_Read_tile_block\Acad_Read_title"
-    Dim filepath2 As String = "C:\Repos\Acad_Read_tile_block\Acad_Read_title\test.dwg"
+    Dim filepath1 As String = "C:\Repositories\Acad_Read_tile_block\Acad_Read_title"
+    Dim filepath2 As String = "C:\Repositories\Acad_Read_tile_block\Acad_Read_title\test.dwg"
+
+    Public AcadApp As Autodesk.AutoCAD.Interop.AcadApplication
+    Public AcadDoc As Autodesk.AutoCAD.Interop.AcadDocuments
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         FilterMtextWildcard()
@@ -128,13 +131,32 @@ Public Class Form1
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim strFileName As String = filepath2
 
-        Dim acDocMgr As DocumentCollection = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager
+        'Try
+        '    Dim acDocMgr As DocumentCollection = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager
 
-        If (IO.File.Exists(strFileName)) Then
-            DocumentCollectionExtension.Open(acDocMgr, strFileName, False)
-        Else
-            acDocMgr.MdiActiveDocument.Editor.WriteMessage("File " & strFileName & " does not exist.")
+        '    If (IO.File.Exists(strFileName)) Then
+        '        DocumentCollectionExtension.Open(acDocMgr, strFileName, False)
+        '    Else
+        '        acDocMgr.MdiActiveDocument.Editor.WriteMessage("File " & strFileName & " does not exist.")
+        '    End If
+
+        'Catch ex As Exception
+        '    MessageBox.Show(filepath2 & " " & ex.ToString)
+        'End Try
+
+        Dim AcadApp, NewFile As Object
+        On Error Resume Next
+        AcadApp = GetObject(, "autocad.Application")
+        If Err.Number <> 0 Then
+            Err.Clear()
+            AcadApp = CreateObject("autocad.Application")
         End If
+
+        AcadApp.Visible = True
+        Err.Clear()
+        NewFile = AcadApp.Documents.Open("c:\test.dwg", False)
+        Dim command As String = "(load ""D:/test.vlx"")"
+        NewFile.SendCommand(command & "(C:test) ")
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click

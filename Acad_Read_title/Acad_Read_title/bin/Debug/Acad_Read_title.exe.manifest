@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Acad_Read_title.exe" size="23480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Acad_Read_title.exe" size="26040">
       <assemblyIdentity name="Acad_Read_title" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LBBO7v2G9ejf+yS8E+5HV3sttF0/7RxPWOZpdi01BWQ=</dsig:DigestValue>
+        <dsig:DigestValue>D7j/GR5DFPrW412JpI1HOscHuwmeuYcD3F++juqnoOs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

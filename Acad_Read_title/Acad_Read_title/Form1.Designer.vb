@@ -33,7 +33,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(33, 46)
+        Me.Button1.Location = New System.Drawing.Point(33, 116)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(207, 23)
         Me.Button1.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(33, 86)
+        Me.Button2.Location = New System.Drawing.Point(33, 145)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(207, 23)
         Me.Button2.TabIndex = 1
@@ -51,7 +51,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(33, 132)
+        Me.Button3.Location = New System.Drawing.Point(33, 46)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(207, 23)
         Me.Button3.TabIndex = 2
@@ -64,7 +64,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(33, 170)
+        Me.Button4.Location = New System.Drawing.Point(33, 17)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(207, 23)
         Me.Button4.TabIndex = 3
@@ -73,7 +73,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(33, 208)
+        Me.Button5.Location = New System.Drawing.Point(33, 174)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(207, 23)
         Me.Button5.TabIndex = 4
@@ -82,9 +82,9 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(75, 257)
+        Me.Button6.Location = New System.Drawing.Point(33, 258)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(165, 23)
+        Me.Button6.Size = New System.Drawing.Size(207, 23)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "GettingAttributes"
         Me.Button6.UseVisualStyleBackColor = True
